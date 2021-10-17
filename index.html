@@ -10,26 +10,21 @@
 </head>
 
 <body>
-    <main class="container">
-        <h1 id="header">Tic Tac Toe</h1>
-        <table CELLSPACING=0>
-            <tr>
-                <td id="cell1"></td>
-                <td id="cell2"></td>
-                <td id="cell3"></td>
-            </tr>
-            <tr>
-                <td id="cell4"></td>
-                <td id="cell5"></td>
-                <td id="cell6"></td>
-            </tr>
-            <tr>
-                <td id="cell7"></td>
-                <td id="cell8"></td>
-                <td id="cell9"></td>
-            </tr>
-        </table>
-    </main>
+    <div class="board x" id="board">
+        <div class="cell x" data-cell></div>
+        <div class="cell circle" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
 
 </body>
 
